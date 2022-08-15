@@ -31,6 +31,9 @@ class ViewController: UIViewController {
         [camera, bookmarks, compose, rewind].forEach(candybar.addArrangedSubview)
         candybar.accessibilityTraits = .tabBar
         candybar.isAccessibilityElement = false
+
+        candybar.accessibilityContainerType = .semanticGroup
+        candybar.accessibilityLabel = "Tab Bar"
     }
 
 
